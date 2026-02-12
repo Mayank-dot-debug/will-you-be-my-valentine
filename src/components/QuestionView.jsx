@@ -7,22 +7,11 @@ const QuestionView = ({ onSuccess }) => {
     const [interactionCount, setInteractionCount] = useState(0);
 
     const messages = [
-        "No",
-        "Are you sure?",
-        "Really sure?",
-        "Think again!",
-        "Last chance!",
-        "Surely not?",
-        "You might regret this!",
-        "Give it another thought!",
-        "Are you absolutely certain?",
-        "This could be a mistake!",
-        "Have a heart!",
-        "Don't be so cold!",
-        "Change of heart?",
-        "Wouldn't you reconsider?",
-        "Is that your final answer?",
-        "You're breaking my heart ;(",
+        "Bhak",
+        "Nahi",
+        "Katapi nahi",
+        "Bilkul nahi",
+        "Oh jhantu Singh Chaubey na samajh nahi aa raha hai?",
     ];
 
     const getNoButtonText = () => {
