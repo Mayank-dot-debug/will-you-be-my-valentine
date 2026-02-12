@@ -1,0 +1,68 @@
+.success-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    color: #d32f2f;
+    animation: popIn 0.5s ease-out;
+    padding: 20px;
+    overflow-y: auto;
+    /* In case content overflows on small screens */
+}
+
+.success-text {
+    font-family: 'Pacifico', cursive;
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+}
+
+.gif-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px 0;
+    max-width: 800px;
+}
+
+.cute-gif {
+    max-width: 200px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.cute-gif:hover {
+    transform: scale(1.05);
+}
+
+.wholesome-message {
+    font-size: 1.5rem;
+    font-family: 'Nunito', sans-serif;
+    max-width: 80%;
+}
+
+@keyframes popIn {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@media (max-width: 600px) {
+    .success-text {
+        font-size: 2.5rem;
+    }
+
+    .cute-gif {
+        max-width: 140px;
+    }
+}
